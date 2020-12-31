@@ -1,0 +1,98 @@
+@import '../../../styles/variables.scss';
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 350px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(88, 88, 88, 0.6);
+    border-radius: 10px;
+    z-index: 1;
+    
+}
+
+.form-contact__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contact__group__input {
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90%;
+    // border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.form-contact__group__label {
+    padding: 0 10px;
+    font-size: 12px;
+    width: 90%;
+    margin: 0 auto;
+    transition: all 0.3s;
+    margin-top: 5px;
+    transform: translateY(-3.3rem);
+    font-family: 'Lato', sans-serif;
+    // transform: translateY(-4.3rem);
+}
+
+
+
+
+.form-contact__group__input:placeholder-shown + .form-contact__group__label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-3rem);
+    transform: translateY(-3rem);
+}
+
+.form-contact__group__button {
+    width: calc(90% + 20px);
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: rgb(106, 106, 106);
+    transition: 1s;
+
+    &:disabled {
+        transition: 1s;
+        background-color: rgba(255, 255, 255, 0.535);
+        opacity: 0.2;
+        color: white;
+    }
+}
+
+@media (min-width: $landscape-phones-width) {
+    .form-contact {
+        // width: 350px;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .form-contact {
+        // width: 450px;
+        max-width: 450px;
+    }
+}
+@media (min-width: $desktop-width) {
+    .form-contact {
+        max-width: 550px;
+    }
+}

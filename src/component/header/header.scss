@@ -1,0 +1,51 @@
+@import '../../styles/variables.scss';
+
+
+.header-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    width: 90%;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+}
+
+.header__title{
+    margin: 20px;
+}
+
+.header__title__a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: $h-font-size-mobile;
+    transition: 1s;
+
+    &:hover {
+        opacity: 0.5;
+        transition: 1s;
+    }
+}
+
+
+
+@media (min-width: $desktop-width) {
+    .header-todo {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: $large-desctop-width) {
+    .header {
+        margin-top: 30px;
+    }
+    .header__title__a {
+        font-size: $h-font-size-very-large;
+    }
+}

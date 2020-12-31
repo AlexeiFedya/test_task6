@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.wrap-home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 79px);
+    font-size: 26px;
+}
+
+@media (min-width: $large-desctop-width) {
+    .wrap-home-page {
+        height: calc(100vh - 100px);
+        font-size: 50px
+    }
+}
+
+// @media (min-width: $tablet-width) {
+
+// }
+
+// @media (min-width: $desktop-width) {
+
+// }
+
+// @media (min-width: $large-desctop-width) {
+
+// }
